@@ -3,28 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 – WDD 131 – Dynamic Web Fundamentals – Pablo Cuiza</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Pablo Cuiza</title>
     <meta name="description" content="WDD 131 – Dynamic Web Fundamentals">
     <meta name="author" content="Juan Pablo Cuiza Arce">
-    
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <header>
-        <span id="course-title"><h1>WDD 131 – Dynamic Web Fundamentals</h1></span>
-        <nav>
-            <ul class="menu">
-            <li><a href="#">LinkeIn</a></li>
-            <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
-            <li><a href="#">Final Project</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
+    <div class="layout">
+        <header>
+            <span id="course-title"><h2>WDD 131 – Dynamic Web Fundamentals</h2></span>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">LinkeIn</a></li>
+                    <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    </main>
-    <footer>
+        <main>
+            <h2 class="title">About me</h2>
+            <div class="about">
+                <div class="content">
+                    <p class="parag">Hello!, my name es Pablo Cuiza i am 44 years old, from La Paz Bolivia, i am marriege 24 year ago, 
+                    i have 6 children, i like wathc mivies with my family, 
+                    super heros movieas are my fovorites, i like food, play basketball and computer stuff.
+                    I am a person with strong ethics and moral values. I have a strong collaborative spirit, 
+                    am a team player, and am prepared to work under pressure. I am helpful and committed to the company's goals. </p>
+                    <h2>La Paz - City</h2>
+                    <div class="about">
+                        <img src="images/lapaz.png" alt="La Paz city" width="200">
+                        <p class="parag">La Paz, officially known as Nuestra Señora de La Paz, is the administrative capital of Bolivia. 
+                        It is located in a canyon created by the Choqueyapu River, surrounded by the majestic Andes mountains, 
+                        including the iconic Illimani peak</p>
+                    </div>
+                </div>
+                <img src="images/paplo.png" alt="perfil photo" width="200px"> 
+            </div>
+        </main>
 
-    </footer>
+        <aside>
+            <h2 class="title">Web Dev Resources</h2>
+            <div class="about"> 
+                <ul class="list">
+                    <li><a href="#">LinkeIn</a></li>
+                    <li><a href="https://byupw.instructure.com/.">Canvas</a></li>
+                    <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+                    <li><a href="#">Final Project</a></li>
+                </ul>
+            </div>
+            
+        </aside>
+
+        <footer>
+            
+            <p id="copyright"></p>
+            <p id="lastModified"></p>
+
+        </footer>
+    </div>
 </body>
 </html>
