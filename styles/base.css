@@ -103,12 +103,15 @@ aside .parag {
   padding: 1rem;
   text-align: justify;
 }
-
+h1{
+  font-family: "Satisfy", cursive;
+}
 h2 {
+  font-family: "Satisfy", cursive;
   text-align: center;  
 }
 
-.about{
+.card{
   display: flex;
   padding: 1rem;
   
