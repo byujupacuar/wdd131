@@ -7,7 +7,8 @@
 }
 
 body {
-  font-family: "Noto Serif", serif;
+  font-family: 'Josefin Sans', sans-serif;
+
   background: #000000;
 }
 
@@ -105,18 +106,23 @@ nav a {
 aside .parag {
   padding: 1rem;
   text-align: justify;
+  font-family: 'Dorsa', sans-serif;
 }
 h1{
   font-family: "Satisfy", cursive;
 }
 h2 {
-  font-family: "Satisfy", cursive;
+  font-family: 'Space Grotesk', sans-serif;
+
   text-align: center;  
 }
+
 
 .card{
   display: flex;
   padding: 1rem;
+   font-family: 'Italiana', serif;
+
   
 }
   
