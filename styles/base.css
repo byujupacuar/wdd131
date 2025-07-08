@@ -7,8 +7,7 @@
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
-
+  font-family: 'Roboto', sans-serif;
   background: #000000;
 }
 
@@ -40,7 +39,8 @@ header {
   box-sizing: border-box;
   text-align: center;
   font-weight: bold;
-  font-family: "Noto Serif", serif
+   font-family: 'Roboto', sans-serif;
+
 }
 
 main {
@@ -106,13 +106,16 @@ nav a {
 aside .parag {
   padding: 1rem;
   text-align: justify;
-  font-family: 'Dorsa', sans-serif;
+   font-family: 'Roboto', sans-serif;
+
 }
 h1{
-  font-family: "Satisfy", cursive;
+   font-family: 'Roboto', sans-serif;
+
 }
 h2 {
-  font-family: 'Space Grotesk', sans-serif;
+   font-family: 'Roboto', sans-serif;
+
 
   text-align: center;  
 }
@@ -121,9 +124,7 @@ h2 {
 .card{
   display: flex;
   padding: 1rem;
-   font-family: 'Italiana', serif;
-
-  
+  font-family: 'Roboto', sans-serif;
 }
   
 nav a:hover {
