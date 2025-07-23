@@ -37,6 +37,9 @@ p {
     margin-top: 4px;
     margin-bottom: 4px;
 }
+img{
+    width: 100vw;
+}
 
 footer {
   background: #222;
