@@ -1,0 +1,76 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Montserrat:wght@300;400;500;700&display=swap');
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F8F4E3; /* Secondary background */
+  color: #4A4A4A; /* Main text color */
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #000000; /* Primary color */
+  padding: 2rem;
+  text-align: center;
+}
+
+header img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Main content */
+main {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* Sections */
+section {
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background-color: #F7E7CE; /* Secondary text background */
+  border-left: 5px solid #D4AF37; /* Accent color */
+  border-radius: 8px;
+  text-align: left;
+}
+
+/* Headings */
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.8rem;
+  color: #D4AF37; /* Accent color */
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Lists */
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Code blocks */
+code {
+  background-color: #E8C7C8; /* Decorative color */
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
+/* Footer */
+footer {
+  background-color: #000000; /* Primary color */
+  color: #F8F4E3; /* Secondary color for contrast */
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}

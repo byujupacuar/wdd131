@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Review Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 2rem;
+            background-color: #f4f4f4;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .stars {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .stars label {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .checkbox-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        input[type="submit"] {
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #0078D4;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        footer {
+            margin-top: 3rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form method="get" action="review.html">
+        <!-- Product Name -->
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+            <script>
+                const products = [
+                    { name: "Hair Dryer Pro" },
+                    { name: "Ceramic Straightener" },
+                    { name: "Volumizing Shampoo" },
+                    { name: "Organic Conditioner" },
+                    { name: "Makeup Kit Deluxe" }
+                ];
+                products.forEach(product => {
+                    const option = document.createElement("option");
+                    option.value = product.name;
+                    option.textContent = product.name;
+                    document.currentScript.parentElement.appendChild(option);
+                });
+            </script>
+        </select>
+
+        <!-- Overall Rating -->
+        <label>Overall Rating</label>
+        <div class="stars">
+            <label><input type="radio" id="star1" name="rating" value="1" required> ☆</label>
+            <label><input type="radio" id="star2" name="rating" value="2"> ☆☆</label>
+            <label><input type="radio" id="star3" name="rating" value="3"> ☆☆☆</label>
+            <label><input type="radio" id="star4" name="rating" value="4"> ☆☆☆☆</label>
+            <label><input type="radio" id="star5" name="rating" value="5"> ☆☆☆☆☆</label>
+        </div>
+
+        <!-- Date of Installation -->
+        <label for="installDate">Date of Installation</label>
+        <input type="date" id="installDate" name="installDate" required>
+
+        <!-- Useful Features -->
+        <label>Useful Features</label>
+        <div class="checkbox-group">
+            <label><input type="checkbox" id="feature1" name="features" value="Lightweight"> Lightweight</label>
+            <label><input type="checkbox" id="feature2" name="features" value="Fast Heating"> Fast Heating</label>
+            <label><input type="checkbox" id="feature3" name="features" value="Eco-Friendly"> Eco-Friendly</label>
+            <label><input type="checkbox" id="feature4" name="features" value="Long Battery Life"> Long Battery
+                Life</label>
+        </div>
+
+        <!-- Written Review -->
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review" rows="5" placeholder="Write your thoughts here..."></textarea>
+
+        <!-- User Name -->
+        <label for="username">Your Name</label>
+        <input type="text" id="username" name="username" placeholder="Optional">
+
+        <!-- Submit Button -->
+        <input type="submit" value="Submit Review">
+    </form>
+
+    <!-- Common Footer -->
+    <footer>
+        <p>&copy; 2025 Beauty Academy. All rights reserved.</p>
+        <p>Assignment submitted as part of Web Development Course.</p>
+    </footer>
+
+</body>
+
+</html>
