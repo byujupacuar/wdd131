@@ -2,80 +2,23 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Product Review Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 2rem;
-            background-color: #f4f4f4;
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Forms – Juan Pablo Cuiza Arce</title>
+    <meta name="description" content="WDD131 - Forms Page.">
+    <meta name="author" content="Juan Pablo Cuiza Arce">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
 
-        form {
-            background-color: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            max-width: 600px;
-            margin: auto;
-        }
-
-        label {
-            display: block;
-            margin-top: 1rem;
-            font-weight: bold;
-        }
-
-        input[type="text"],
-        input[type="date"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 0.5rem;
-            margin-top: 0.5rem;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .stars {
-            display: flex;
-            gap: 1rem;
-            margin-top: 0.5rem;
-        }
-
-        .stars label {
-            font-size: 1.5rem;
-            cursor: pointer;
-        }
-
-        .checkbox-group {
-            display: flex;
-            flex-direction: column;
-            gap: 0.5rem;
-            margin-top: 0.5rem;
-        }
-
-        input[type="submit"] {
-            margin-top: 2rem;
-            padding: 0.75rem 1.5rem;
-            background-color: #0078D4;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        footer {
-            margin-top: 3rem;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #666;
-        }
-    </style>
 </head>
 
 <body>
-
+    <header>
+        <h1>Product Review</h1>
+    </header>
     <form method="get" action="review.html">
         <!-- Product Name -->
         <label for="product">Product Name</label>
@@ -101,11 +44,26 @@
         <!-- Overall Rating -->
         <label>Overall Rating</label>
         <div class="stars">
-            <label><input type="radio" id="star1" name="rating" value="1" required> ☆</label>
-            <label><input type="radio" id="star2" name="rating" value="2"> ☆☆</label>
-            <label><input type="radio" id="star3" name="rating" value="3"> ☆☆☆</label>
-            <label><input type="radio" id="star4" name="rating" value="4"> ☆☆☆☆</label>
-            <label><input type="radio" id="star5" name="rating" value="5"> ☆☆☆☆☆</label>
+            <div class="starr">
+                <label for="star1">☆</label>
+                <input type="radio" id="star1" name="rating" value="1" required>
+            </div>
+            <div class="starr">
+                <label for="star2">☆☆</label>
+                <input type="radio" id="star2" name="rating" value="2">
+            </div>
+            <div class="starr">
+                <label for="star3">☆☆☆</label>
+                <input type="radio" id="star3" name="rating" value="3">
+            </div>
+            <div class="starr">
+                <label for="star4">☆☆☆☆</label>
+                <input type="radio" id="star4" name="rating" value="4">
+            </div>
+            <div class="starr">
+                <label for="star5">☆☆☆☆☆</label>
+                <input type="radio" id="star5" name="rating" value="5">
+            </div>
         </div>
 
         <!-- Date of Installation -->
@@ -118,8 +76,7 @@
             <label><input type="checkbox" id="feature1" name="features" value="Lightweight"> Lightweight</label>
             <label><input type="checkbox" id="feature2" name="features" value="Fast Heating"> Fast Heating</label>
             <label><input type="checkbox" id="feature3" name="features" value="Eco-Friendly"> Eco-Friendly</label>
-            <label><input type="checkbox" id="feature4" name="features" value="Long Battery Life"> Long Battery
-                Life</label>
+            <label><input type="checkbox" id="feature4" name="features" value="Long Battery Life"> Long Battery Life</label>
         </div>
 
         <!-- Written Review -->
@@ -136,8 +93,8 @@
 
     <!-- Common Footer -->
     <footer>
-        <p>&copy; 2025 Beauty Academy. All rights reserved.</p>
-        <p>Assignment submitted as part of Web Development Course.</p>
+           <p id="copyright"></p>
+            <p id="lastModified"></p>
     </footer>
 
 </body>
