@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
 
     <header>
         <nav class="navbar">
-            <div class="logo">Beauty Academy</div>
+            <div class="logo"><img src="images/logoh.png" alt="logo iluminat" width="300px"></div>
             <button class="hamburger" id="hamburger">
                 <i class="fas fa-bars"></i>
             </button>
@@ -32,26 +33,9 @@
     </section>
 
     <section class="course-list">
-        <div class="course-card">
-            <img src="img/makeup_course.jpg" alt="Makeup Artistry Course">
-            <h3>Makeup Artistry</h3>
-            <p>Learn the latest makeup techniques and create stunning looks for any occasion.</p>
-            <a href="#" class="button accent-button">Learn More</a>
-        </div>
+        <div id="courseList" style="display: flex; flex-wrap: wrap; justify-content: center;"></div>
 
-        <div class="course-card">
-            <img src="img/hair_course.jpg" alt="Hair Styling Course">
-            <h3>Hair Styling</h3>
-            <p>Master the art of hairstyling, from classic cuts to modern trends.</p>
-            <a href="#" class="button accent-button">Learn More</a>
-        </div>
 
-        <div class="course-card">
-            <img src="img/nail_course.jpg" alt="Nail Technology Course">
-            <h3>Nail Technology</h3>
-            <p>Become a certified nail technician and offer a variety of nail services.</p>
-            <a href="#" class="button accent-button">Learn More</a>
-        </div>
     </section>
 
     <footer id="contact">
