@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Belleza</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">Academia Belleza</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="courses.html">Cursos</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="enroll.html">Inscripción</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-button">☰</button>
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="courses.html">Cursos</a></li>
+                    <li><a href="gallery.html">Galería</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="enroll.html">Inscripción</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Bienvenido a la Academia de Belleza</h1>
+                <p>Transforma tu pasión en una carrera. Aprende con los mejores profesionales.</p>
+                <a href="enroll.html" class="button">Inscríbete Ahora</a>
+            </div>
+        </section>
+
+        <section class="history">
+            <div class="container">
+                <h2>Nuestra Historia</h2>
+                <p>Fundada en 2015, Academia Belleza se ha dedicado a formar profesionales de la belleza...</p>
+            </div>
+        </section>
+
+        <section class="courses-preview">
+            <div class="container">
+                <h2>Cursos Destacados</h2>
+                <div class="course-grid">
+                    <div>
+                        <h3>Maquillaje Profesional</h3>
+                        <p>Aprende técnicas avanzadas de maquillaje para eventos sociales y moda.</p>
+                        <a href="courses.html" class="button">Más Información</a>
+                    </div>
+                    <div>
+                        <h3>Peluquería y Estilismo</h3>
+                        <p>Domina el arte del corte, color y peinado para todo tipo de cabello.</p>
+                        <a href="courses.html" class="button">Más Información</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2>Testimonios</h2>
+                <div class="testimonial-slider">
+                    <div>"Increíble experiencia, aprendí muchísimo y ahora tengo mi propio salón." - Ana</div>
+                    <div>"Los profesores son excelentes y el ambiente es muy motivador." - Sofía</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="displayEnrollmentData" class="container">
+            <!-- Data from local storage will be displayed here -->
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Academia Belleza</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
