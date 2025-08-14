@@ -1,6 +1,6 @@
 /* Paleta base */
 :root {
-  --gold: #d4af37;
+  --gold: #b38e2e;
   --dark: #1c1c1c;
   --light: #ffffff;
 }
@@ -24,7 +24,10 @@ header {
   letter-spacing: 1px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
-
+h2{
+  color: var(--gold);
+  text-align: center;
+}
 /* Formulario */
 form {
   background-color: var(--light);
