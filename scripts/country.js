@@ -15,7 +15,7 @@ const tempF = 45;
     } else {
       windchillElement.textContent = 'N/A';
     }
-
+    
     
 const currentYear = new Date().getFullYear();
 document.getElementById("copyright").textContent = `© ${currentYear} - Juan Pablo Cuiza Arce - Bolivia`;

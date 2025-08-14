@@ -1,0 +1,333 @@
+   :root {
+       --primary-color: #000000;
+       --secondary-color: #F8F4E3;
+       --accent-color: #D4AF37;
+       --main-text-color: #4A4A4A;
+       --secondary-text-color: #F7E7CE;
+       --decorative-color: #E8C7C8;
+   }
+
+   body {
+       font-family: 'Open Sans', sans-serif;
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       background-color: var(--secondary-color);
+       color: var(--main-text-color);
+   }
+
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+       font-family: 'Playfair Display', serif;
+       color: var(--primary-color);
+   }
+
+   header {
+       background-color: var(--primary-color);
+       color: var(--secondary-text-color);
+       padding: 1rem 0;
+       text-align: center;
+   }
+
+   nav {
+       background-color: var(--primary-color);
+       padding: 0.5rem 0;
+   }
+
+   #menu::before {
+       content: "☰";
+   }
+
+   #menu.open::before {
+       content: "✖️";
+   }
+
+   .open a {
+       display: block;
+   }
+
+   nav ul {
+       list-style: none;
+       padding: 0;
+       margin: 0;
+       display: block;
+       justify-content: center;
+   }
+
+   nav ul li {
+       margin: 0 1.5rem;
+       padding: 0.5rem;
+   }
+
+   nav ul li a {
+       color: var(--secondary-text-color);
+       text-decoration: none;
+       font-weight: 600;
+       transition: color 0.3s ease;
+   }
+
+   nav ul li a:hover {
+       color: var(--accent-color);
+   }
+
+   .hero {
+       background-color: var(--primary-color);
+       color: var(--secondary-text-color);
+       text-align: center;
+       padding: 4rem 1rem;
+   }
+
+   .hero h1 {
+       color: var(--secondary-text-color);
+       font-size: 3rem;
+       margin-bottom: 1rem;
+   }
+
+   .hero p {
+       font-size: 1.2rem;
+       max-width: 800px;
+       margin: 0 auto;
+   }
+
+   section {
+       padding: 3rem 1rem;
+       max-width: 1200px;
+       margin: 0 auto;
+   }
+
+   section:nth-of-type(even) {
+       background-color: var(--secondary-color);
+   }
+
+   .section-title {
+       text-align: center;
+       margin-bottom: 2.5rem;
+       font-size: 2.5rem;
+       color: var(--primary-color);
+   }
+
+   .history-content,
+   .courses-grid,
+   .gallery-grid,
+   .testimonials-grid,
+   .blog-grid {
+       display: grid;
+       gap: 2rem;
+   }
+
+   .history-content {
+       grid-template-columns: 1fr;
+   }
+   nav a {
+    display: none;
+    color: #fff;
+    text-align: center;
+    padding: .5rem;
+    text-decoration: none;
+    font-size: larger;
+}
+   @media (min-width: 768px) {
+       .history-content {
+           grid-template-columns: 1fr 1fr;
+           align-items: center;
+       }
+
+       nav ul {
+           list-style: none;
+           padding: 0;
+           margin: 0;
+           display: flex;
+           justify-content: flex-end;
+           flex-direction: row;
+       }
+
+       header {
+           display: block;
+           align-items: center;
+           justify-content: space-between;
+       }
+
+       nav a {
+           flex: 1 1 100%;
+       }
+
+       #menu {
+           display: none;
+           
+       }
+
+       .navigation {
+           flex-direction: row;
+       }
+
+       .navigation a {
+           display: block;
+           flex: 1 1 100%;
+       }
+
+   }
+
+   .history-image {
+       max-width: 100%;
+       height: auto;
+       border-radius: 8px;
+       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+   }
+
+   .courses-grid,
+   .gallery-grid,
+   .blog-grid {
+       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+   }
+
+   .course-card,
+   .gallery-item,
+   .testimonial-card,
+   .blog-post {
+       background-color: var(--secondary-text-color);
+       border-radius: 8px;
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+       overflow: hidden;
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+
+   .course-card:hover,
+   .gallery-item:hover,
+   .testimonial-card:hover,
+   .blog-post:hover {
+       transform: translateY(-5px);
+       box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+   }
+
+   .course-card img,
+   .gallery-item img,
+   .blog-post img {
+       width: 100%;
+       height: 200px;
+       object-fit: cover;
+       display: block;
+   }
+
+   .card-content {
+       padding: 1.5rem;
+   }
+
+   .card-content h3 {
+       margin-top: 0;
+       color: var(--primary-color);
+   }
+
+   .card-content p {
+       font-size: 0.95rem;
+       line-height: 1.6;
+   }
+
+   .btn {
+       display: inline-block;
+       background-color: var(--accent-color);
+       color: var(--primary-color);
+       padding: 0.8rem 1.5rem;
+       border-radius: 5px;
+       text-decoration: none;
+       font-weight: 600;
+       transition: background-color 0.3s ease, transform 0.3s ease;
+       margin-top: 1rem;
+   }
+
+   .btn:hover {
+       background-color: #c09a2f;
+       /* Slightly darker accent */
+       transform: translateY(-2px);
+   }
+
+   .testimonials-grid {
+       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+   }
+
+   .testimonial-card {
+       padding: 2rem;
+       text-align: center;
+       background-color: var(--decorative-color);
+       color: var(--primary-color);
+   }
+
+   .testimonial-card p {
+       font-style: italic;
+       margin-bottom: 1rem;
+       color: var(--main-text-color);
+   }
+
+   .testimonial-card .author {
+       font-weight: 600;
+       color: var(--primary-color);
+   }
+
+   .contact-form,
+   .enrollment-form {
+       background-color: var(--secondary-text-color);
+       padding: 2.5rem;
+       border-radius: 8px;
+       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+       max-width: 600px;
+       margin: 0 auto;
+   }
+
+   .form-group {
+       margin-bottom: 1.5rem;
+   }
+
+   .form-group label {
+       display: block;
+       margin-bottom: 0.5rem;
+       font-weight: 600;
+       color: var(--primary-color);
+   }
+
+   .form-group input,
+   .form-group textarea,
+   .form-group select {
+       width: 100%;
+       padding: 0.8rem;
+       border: 1px solid #ddd;
+       border-radius: 5px;
+       font-family: 'Open Sans', sans-serif;
+       font-size: 1rem;
+       color: var(--main-text-color);
+       background-color: #fff;
+   }
+
+   .form-group textarea {
+       resize: vertical;
+       min-height: 100px;
+   }
+
+   .form-group input[type="submit"] {
+       background-color: var(--accent-color);
+       color: var(--primary-color);
+       border: none;
+       cursor: pointer;
+       font-weight: 700;
+       transition: background-color 0.3s ease, transform 0.3s ease;
+   }
+
+   .form-group input[type="submit"]:hover {
+       background-color: #c09a2f;
+       transform: translateY(-2px);
+   }
+
+   footer {
+       background-color: var(--primary-color);
+       color: var(--secondary-text-color);
+       text-align: center;
+       padding: 2rem 1rem;
+       margin-top: 3rem;
+   }
+
+   footer p {
+       margin: 0;
+       font-size: 0.9rem;
+   }
